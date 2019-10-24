@@ -2,3 +2,7 @@
     height: 4px !important;
     background: #9b59b6 !important;
 }
+
+.side{
+    border-right: 3px solid skyblue !important;
+}

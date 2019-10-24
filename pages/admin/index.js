@@ -1,10 +1,32 @@
 import Layout from '../../components/Layout';
 import Admin from '../../components/auth/Admin';
+import Link from 'next/link'
 
 
 const AdminIndex = ()=>{
    return <Layout>
-       <Admin><h2>Admin Dashborad</h2></Admin>       
+       <Admin>
+           <div className="container">
+          <div className="row">
+              <div className="col-md-12 mt-5 mb-5"> <h2 className="alert alert-success">Admin Dashborad</h2></div>
+              <div className="col-md-4">
+              <ul className="list-group">
+                <li className="list-group-item">
+                    <Link href="/admin/crud/category-tag">
+                        <a>Create Category</a>
+                    </Link>
+                </li>
+                <li className="list-group-item">
+                    <Link href="/admin/crud/category-tag">
+                        <a>Create Tags</a>
+                    </Link>
+                </li>
+              </ul>
+              </div>
+              <div className="col-md-8">Right</div>
+          </div>
+          </div>
+       </Admin>       
    </Layout>
 }
 
